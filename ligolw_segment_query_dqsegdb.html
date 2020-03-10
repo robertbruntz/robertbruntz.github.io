@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ligolw_segment_query_dqsegdb &#8212; dqsegdb 1.6.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ligolw_segments_from_cats_dqsegdb" href="ligolw_segments_from_cats_dqsegdb.html" />
+    <link rel="prev" title="dqsegdb Package" href="dqsegdb.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ligolw_segments_from_cats_dqsegdb.html" title="ligolw_segments_from_cats_dqsegdb"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dqsegdb.html" title="dqsegdb Package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">dqsegdb 1.6.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ligolw-segment-query-dqsegdb">
+<h1>ligolw_segment_query_dqsegdb<a class="headerlink" href="#ligolw-segment-query-dqsegdb" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This provides the means to answer several questions posed against either the
+segment database or a collection of DMT XML files.  Output should match
+exactly the format returned by S6 style segment database tools.</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>(Not yet operational): What DQ flags exist in the database? ligolw_segment_query –show-types</dt><dd><ul>
+<li><dl class="simple">
+<dt>(Not yet operational): When was a given DQ flag defined? ligolw_segment_query –query-types</dt><dd><ul>
+<li><dl class="simple">
+<dt>When was a given flag active? ligolw_segment_query –query-segments</dt><dd><ul>
+<li><p>Example: ligolw_segment_query_dqsegdb –segment-url=http://slwebtest.virgo.infn.it –query-segments –gps-start-time 1070612448 –gps-end-time 1070613448 –include-segments=”H1:ODC-PSL_SUMMARY:1” -o example.xml</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="help-message">
+<h2>Help message<a class="headerlink" href="#help-message" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ligolw_segment_query_dqsegdb --help
+Traceback (most recent call last):
+  File &quot;/root/venv_dqsegdb_2020.03.09a/bin/ligolw_segment_query_dqsegdb&quot;, line 57, in &lt;module&gt;
+    from dqsegdb import apicalls
+  File &quot;/root/venv_dqsegdb_2020.03.09a/lib64/python3.6/site-packages/dqsegdb/apicalls.py&quot;, line 31, in &lt;module&gt;
+    from glue.ligolw.utils import process
+  File &quot;/root/venv_dqsegdb_2020.03.09a/lib64/python3.6/site-packages/glue/ligolw/utils/process.py&quot;, line 41, in &lt;module&gt;
+    from .. import lsctables
+  File &quot;/root/venv_dqsegdb_2020.03.09a/lib64/python3.6/site-packages/glue/ligolw/lsctables.py&quot;, line 50, in &lt;module&gt;
+    import lal
+ModuleNotFoundError: No module named &#39;lal&#39;
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ligolw_segment_query_dqsegdb</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#help-message">Help message</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dqsegdb.html"
+                        title="previous chapter">dqsegdb Package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ligolw_segments_from_cats_dqsegdb.html"
+                        title="next chapter">ligolw_segments_from_cats_dqsegdb</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ligolw_segment_query_dqsegdb.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ligolw_segments_from_cats_dqsegdb.html" title="ligolw_segments_from_cats_dqsegdb"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dqsegdb.html" title="dqsegdb Package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">dqsegdb 1.6.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014,2020 Ryan Fisher.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>
